@@ -1,30 +1,33 @@
+import 'package:animated_button/animated_button.dart';
 import 'package:animator/animator.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:guiavenezuela/capital_amazona.dart';
-import 'package:guiavenezuela/capital_anzoategui.dart';
-import 'package:guiavenezuela/capital_apure.dart';
-import 'package:guiavenezuela/capital_aragua.dart';
-import 'package:guiavenezuela/capital_barinas.dart';
-import 'package:guiavenezuela/capital_bolivar.dart';
-import 'package:guiavenezuela/capital_carabobo.dart';
-import 'package:guiavenezuela/capital_cojedes.dart';
-import 'package:guiavenezuela/capital_delta.dart';
-import 'package:guiavenezuela/capital_distritocapital.dart';
-import 'package:guiavenezuela/capital_falcon.dart';
-import 'package:guiavenezuela/capital_guarico.dart';
-import 'package:guiavenezuela/capital_lara.dart';
-import 'package:guiavenezuela/capital_merida.dart';
-import 'package:guiavenezuela/capital_miranda.dart';
-import 'package:guiavenezuela/capital_monagas.dart';
-import 'package:guiavenezuela/capital_nuevaesparta.dart';
-import 'package:guiavenezuela/capital_portuguesa.dart';
-import 'package:guiavenezuela/capital_sucre.dart';
-import 'package:guiavenezuela/capital_tachira.dart';
-import 'package:guiavenezuela/capital_trujillo.dart';
-import 'package:guiavenezuela/capital_vargas.dart';
-import 'package:guiavenezuela/capital_yaracuy.dart';
-import 'package:guiavenezuela/capital_zulia.dart';
+import 'package:guiavenezuela/estados/capital_amazona.dart';
+import 'package:guiavenezuela/estados/capital_anzoategui.dart';
+import 'package:guiavenezuela/estados/capital_apure.dart';
+import 'package:guiavenezuela/estados/capital_aragua.dart';
+import 'package:guiavenezuela/estados/capital_barinas.dart';
+import 'package:guiavenezuela/estados/capital_bolivar.dart';
+import 'package:guiavenezuela/estados/capital_carabobo.dart';
+import 'package:guiavenezuela/estados/capital_cojedes.dart';
+import 'package:guiavenezuela/estados/capital_delta.dart';
+import 'package:guiavenezuela/estados/capital_distritocapital.dart';
+import 'package:guiavenezuela/estados/capital_falcon.dart';
+import 'package:guiavenezuela/estados/capital_guarico.dart';
+import 'package:guiavenezuela/estados/capital_lara.dart';
+import 'package:guiavenezuela/estados/capital_merida.dart';
+import 'package:guiavenezuela/estados/capital_miranda.dart';
+import 'package:guiavenezuela/estados/capital_monagas.dart';
+import 'package:guiavenezuela/estados/capital_nuevaesparta.dart';
+import 'package:guiavenezuela/estados/capital_portuguesa.dart';
+import 'package:guiavenezuela/estados/capital_sucre.dart';
+import 'package:guiavenezuela/estados/capital_tachira.dart';
+import 'package:guiavenezuela/estados/capital_trujillo.dart';
+import 'package:guiavenezuela/estados/capital_vargas.dart';
+import 'package:guiavenezuela/estados/capital_yaracuy.dart';
+import 'package:guiavenezuela/estados/capital_zulia.dart';
+import 'package:guiavenezuela/interative_page.dart';
+import 'package:guiavenezuela/nuevo.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,7 +43,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Venezuela',
       theme: ThemeData(brightness: Brightness.dark),
-      home: const PageLoginGuideAr(),
+      home: PageLoginGuideAr(), //home: const InteractivePage(),
     );
   }
 }
@@ -61,30 +64,30 @@ class _PageLoginGuideArState extends State<PageLoginGuideAr> {
         children: <Widget>[
           _pagina1(),
           _pagina2(),
-          _pagina17(), //Amazona
-          _pagina19(), //Anzoategui
-          _pagina5(), //Apure
-          _pagina16(), //Aragua
-          _pagina6(), //Barinas
-          _pagina7(), //Bolivar
-          _pagina20(), //Carabobo
-          _pagina21(), //Cojedes
-          _pagina25(), //Delta Amacuro
-          _pagina23(), //Distrito Capital
-          _pagina22(), //Falcon
-          _pagina4(), //Guarico
-          _pagina12(), //Lara
-          _pagina3(), //Mérida
-          _pagina18(), //Miranda
-          _pagina10(), //Monagas
-          _pagina24(), //Nueva Esparta
-          _pagina8(), //Portuguesa
-          _pagina11(), //Sucre
-          _pagina14(), //Trujillo
-          _pagina26(), //Tachira
-          _pagina15(), //Vargas
-          _pagina13(), //Yaracuy
-          _pagina9(), //Zulia
+          // _pagina17(), //Amazona
+          // _pagina19(), //Anzoategui
+          // _pagina5(), //Apure
+          // _pagina16(), //Aragua
+          // _pagina6(), //Barinas
+          // _pagina7(), //Bolivar
+          // _pagina20(), //Carabobo
+          // _pagina21(), //Cojedes
+          // _pagina25(), //Delta Amacuro
+          // _pagina23(), //Distrito Capital
+          // _pagina22(), //Falcon
+          // _pagina4(), //Guarico
+          // _pagina12(), //Lara
+          // _pagina3(), //Mérida
+          // _pagina18(), //Miranda
+          // _pagina10(), //Monagas
+          // _pagina24(), //Nueva Esparta
+          // _pagina8(), //Portuguesa
+          // _pagina11(), //Sucre
+          // _pagina14(), //Trujillo
+          // _pagina26(), //Tachira
+          // _pagina15(), //Vargas
+          // _pagina13(), //Yaracuy
+          // _pagina9(), //Zulia
         ],
       ),
     );
@@ -155,7 +158,14 @@ class _PageLoginGuideArState extends State<PageLoginGuideAr> {
               ],
             ),
           ),
-          SizedBox(height: 1),
+          Container(
+            child: Image.asset(
+              "images/brujula.png",
+              fit: BoxFit.cover,
+              height: MediaQuery.of(context).size.height * 0.5,
+            ),
+          ),
+          const SizedBox(height: 1),
           Expanded(child: Container()),
           Animator<double>(
             duration: const Duration(milliseconds: 1000),
@@ -203,8 +213,7 @@ class _PageLoginGuideArState extends State<PageLoginGuideAr> {
                           fontWeight: FontWeight.bold)),
                 ],
               ),
-              SizedBox(height: 1),
-              Expanded(child: Container()),
+              const SizedBox(height: 1),
               Animator<double>(
                 duration: const Duration(milliseconds: 1000),
                 cycles: 0,
@@ -215,7 +224,20 @@ class _PageLoginGuideArState extends State<PageLoginGuideAr> {
                   size: animatorState.value * 2,
                   color: Colors.white,
                 ),
-              )
+              ),
+              Expanded(child: Container()),
+              AnimatedButton(
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => InteractivePage(),
+                  ),
+                ),
+                color: Colors.blueAccent,
+                width: MediaQuery.of(context).size.width / 1.5,
+                child: const Text('iniciar',style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),),
+              ),
+              SizedBox(height: 50)
             ],
           ),
         )
@@ -383,7 +405,7 @@ class _PageLoginGuideArState extends State<PageLoginGuideAr> {
         children: <Widget>[
           _backgroundimage(
               urlImage:
-              'https://i.pinimg.com/736x/ec/a1/4b/eca14b8f6d15d822cdb45372da16e9a9--venezuela.jpg'),
+                  'https://i.pinimg.com/736x/ec/a1/4b/eca14b8f6d15d822cdb45372da16e9a9--venezuela.jpg'),
           Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -408,7 +430,7 @@ class _PageLoginGuideArState extends State<PageLoginGuideAr> {
                     children: <TextSpan>[
                       TextSpan(
                         text:
-                        '\nSe encuentra ubicado en los llanos. Su gastronomía es exquisita y muy especial, ya que combina las más antiguas tradiciones entre las comidas típicas del estado Apure, haciendo deleitar a sus habitantes y a los turistas de una gran variedad de opciones gastronómicas en cada plato.\n\nAlgo que es muy interesante es que los platos típicos del estado Apure es que se componen de ingredientes y alimentos proporcionados por el mismo llano y los ríos que atraviesan el estado. Es así como la comida típica de este estado venezolano se caracteriza por presentar exquisiteces criollas.',
+                            '\nSe encuentra ubicado en los llanos. Su gastronomía es exquisita y muy especial, ya que combina las más antiguas tradiciones entre las comidas típicas del estado Apure, haciendo deleitar a sus habitantes y a los turistas de una gran variedad de opciones gastronómicas en cada plato.\n\nAlgo que es muy interesante es que los platos típicos del estado Apure es que se componen de ingredientes y alimentos proporcionados por el mismo llano y los ríos que atraviesan el estado. Es así como la comida típica de este estado venezolano se caracteriza por presentar exquisiteces criollas.',
                         style: TextStyle(
                           fontSize: 15,
                           fontWeight: FontWeight.w300,
@@ -424,8 +446,8 @@ class _PageLoginGuideArState extends State<PageLoginGuideAr> {
                       onPressed: () {
                         Navigator.of(context).push(
                             MaterialPageRoute(builder: (BuildContext context) {
-                              return Apure();
-                            }));
+                          return Apure();
+                        }));
                       },
                       child: Animator<double>(
                         duration: const Duration(milliseconds: 1000),
@@ -444,10 +466,10 @@ class _PageLoginGuideArState extends State<PageLoginGuideAr> {
                 const SizedBox(height: 1),
                 const Expanded(
                     child: Icon(
-                      Icons.keyboard_arrow_down,
-                      size: 70,
-                      color: Colors.white,
-                    ))
+                  Icons.keyboard_arrow_down,
+                  size: 70,
+                  color: Colors.white,
+                ))
               ],
             ),
           ),
