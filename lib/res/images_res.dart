@@ -1,0 +1,75 @@
+/// Generated file. Do not edit.
+
+// ignore_for_file: constant_identifier_names
+// ignore_for_file: lines_longer_than_80_chars
+class ImagesRes {
+  static const String PLUGIN_NAME = 'guiavenezuela';
+  static const String PLUGIN_VERSION = '1.0.0+1';
+  static const String AMAZONAS = 'images/Amazonas.jpg';
+  static const String ANZOATEQUI = 'images/Anzoatequi.jpg';
+  static const String APURE = 'images/Apure.jpg';
+  static const String ARAGUA = 'images/Aragua.jpg';
+  static const String BARINAS = 'images/Barinas.jpg';
+  static const String BOLIVAR = 'images/Bolivar.jpg';
+  static const String CARABOBO = 'images/Carabobo.jpg';
+  static const String COJEDES = 'images/Cojedes.jpg';
+  static const String DELTA_AMACURO = 'images/Delta_Amacuro.jpg';
+  static const String DISTRITO_CAPITAL = 'images/Distrito_Capital.jpg';
+  static const String FALCON = 'images/Falcon.png';
+  static const String GUARICO = 'images/Guarico.jpg';
+  static const String LARA = 'images/Lara.jpg';
+  static const String MERIDA = 'images/Merida.jpg';
+  static const String MIRANDA = 'images/Miranda.jpg';
+  static const String MONAGAS = 'images/Monagas.jpg';
+  static const String NUEVA_ESPARTA = 'images/Nueva_Esparta.jpg';
+  static const String PORTUGUESA = 'images/Portuguesa.jpg';
+  static const String SUCRE = 'images/Sucre.jpg';
+  static const String TACHIRA = 'images/Tachira.png';
+  static const String TRUJILLO = 'images/Trujillo.png';
+  static const String VARGAS = 'images/Vargas.jpg';
+  static const String YARACUY = 'images/Yaracuy.jpg';
+  static const String ZULIA = 'images/Zulia.jpg';
+  static const String BRUJULA = 'images/brujula.png';
+  static const String MAPA = 'images/mapa.png';
+  static const String PERFIL = 'images/perfil.jpg';
+  static const String ASADA = 'images/platos/ASADA.png';
+  static const String BENITO = 'images/platos/Benito.png';
+  static const String CARNE_ASADA = 'images/platos/CARNE_ASADA.jpg';
+  static const String CHIGUIRE = 'images/platos/Chiguire.png';
+  static const String PABELLON = 'images/platos/Pabellon.png';
+  static const String PISILLO_GUARIQUENO = 'images/platos/Pisillo_Guariqueno.png';
+  static const String TURAS = 'images/platos/Turas.png';
+  static const String AREPA = 'images/platos/arepa.png';
+  static const String ARROZ = 'images/platos/arroz.png';
+  static const String ARROZCONLECHE = 'images/platos/arrozconleche.png';
+  static const String ASADO = 'images/platos/asado.png';
+  static const String BAMBUNCO = 'images/platos/bambunco.png';
+  static const String CACHAPA = 'images/platos/cachapa.png';
+  static const String CRUZMAYO = 'images/platos/cruzmayo.png';
+  static const String DIABLO = 'images/platos/diablo.png';
+  static const String DIABLO2 = 'images/platos/diablo2.png';
+  static const String FRITO = 'images/platos/frito.png';
+  static const String GAITA = 'images/platos/gaita.png';
+  static const String GUARAGUARA = 'images/platos/guaraguara.png';
+  static const String HAMACA = 'images/platos/hamaca.png';
+  static const String JOROPO = 'images/platos/joropo.png';
+  static const String JOROPO2 = 'images/platos/joropo2.png';
+  static const String LAPA = 'images/platos/lapa.png';
+  static const String LLORA = 'images/platos/llora.png';
+  static const String MAJARETE = 'images/platos/majarete.png';
+  static const String MAPALE = 'images/platos/mapale.png';
+  static const String MERLUSA = 'images/platos/merlusa.png';
+  static const String MONDONGO = 'images/platos/mondongo.png';
+  static const String MONDONGO3 = 'images/platos/mondongo3.png';
+  static const String MONDONGOCHI = 'images/platos/mondongochi.png';
+  static const String MORCILLA = 'images/platos/morcilla.png';
+  static const String MOROCOTODELTANO = 'images/platos/morocotodeltano.png';
+  static const String PATACON = 'images/platos/patacon.png';
+  static const String PISCA = 'images/platos/pisca.png';
+  static const String POLLO_CACAO = 'images/platos/pollo_cacao.png';
+  static const String SANCOCHO = 'images/platos/sancocho.png';
+  static const String SAPOARA = 'images/platos/sapoara.png';
+  static const String SEBUCAN = 'images/platos/sebucan.png';
+  static const String WARAO = 'images/platos/warao.jpg';
+  static const String UNIVERSO = 'images/universo.png';
+}
